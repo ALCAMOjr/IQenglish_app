@@ -81,7 +81,8 @@ const Libros = () => {
                                           <svg className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                               <path fillRule="evenodd" d="M16.707 4.707a1 1 0 00-1.414-1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8z" clipRule="evenodd"></path>
                                           </svg>
-                                          Garantía del 200%
+                                          Garantía al 100%
+                                          
                                       </li>
                                       <li className="flex items-center text-gray-600">
                                           <svg className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">

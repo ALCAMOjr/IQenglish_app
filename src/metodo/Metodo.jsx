@@ -411,7 +411,7 @@ const transitions = useTransition(isVisible ? cards : [], {
             <div className="flex items-center h-5">
               <input id="terms" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
             </div>
-            <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">De acuerdo con los <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</a></label>
+            <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">De acuerdo con los <a  className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</a></label>
           </div>
           <div className="flex items-start mb-5">
             <div className="flex items-center h-5">
@@ -451,7 +451,7 @@ const transitions = useTransition(isVisible ? cards : [], {
                             <span className="mb-2 block text-lg font-semibold text-primary">
                                 Nuestro Metodo
                             </span>
-                            <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                            <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-black dark:text-black sm:text-4xl md:text-[40px]">
                                 3 Niveles de 14 lecciones
                             </h2>
                             <p className="text-base text-body-color dark:text-dark-6">

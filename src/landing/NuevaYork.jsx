@@ -30,8 +30,11 @@ const NuevaYork = () => {
               Al concluir tu preparación bilingüe en IQ English en 12 meses o menos, podrás vivir esta experiencia que cambiará tu vida y relación con el idioma.
             </p>
             <p className="mb-2 max-w-[600px] text-md text-white font-normal text-center">
-              Durante una semana perfecciona tu inglés en el College of Mount Saint Vincent y explora de cerca los lugares más emocionantes de la ciudad de Nueva York. ¡Inscríbete ahora!
+              Durante una semana perfecciona tu inglés en el
+              <span className="text-black ml-1 mr-1">College of Mount Saint Vincent</span>
+              y explora de cerca los lugares más emocionantes de la ciudad de Nueva York. ¡Inscríbete ahora!
             </p>
+
             <ul className="flex flex-wrap justify-center items-center mt-8 lg:mt-16">
               <li>
                 <button

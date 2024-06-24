@@ -13,7 +13,7 @@ const Video = () => {
             ¿Todavía tienes dudas de nuestro viaje a New York?
           </h2>
           <p className="mb-2 max-w-[600px] text-lg md:text-xl lg:text-2xl dark:text-dark-6 font-popping text-black" style={{ letterSpacing: '-0.01em' }}>
-            Escribe hoy, te asesoraremos con todas las preguntas que tengas
+          Escribe hoy para que un asesor resuelva todas tus dudas.
           </p>
           <ul className="flex flex-wrap items-center mt-8 lg:mt-16 justify-center lg:justify-start">
             <li>

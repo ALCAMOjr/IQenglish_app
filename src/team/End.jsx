@@ -380,13 +380,13 @@ const End = () => {
             </div>
 
             <div className="content-container py-8 mx-auto relative mb-32 bg-[#F0F4F9]">
-                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-4 lg:justify-start">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-4 ml-8 lg:justify-start">
                     <div className="max-w-xl mt-16 mx-auto text-center lg:text-left">
                         <h2 className="text-4xl font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-primary">
                             ¿Todavía tienes dudas sobre aprender Inglés?
                         </h2>
                         <p className="mb-2 max-w-[600px] text-xl lg:text-2xl dark:text-dark-6 font-popping text-black mx-auto lg:mx-0" style={{ letterSpacing: '-0.01em' }}>
-                            Aprender inglés abre puertas a nuevas oportunidades, amplía tus horizontes y te conecta con el mundo. ¡Transforma tu vida hoy!
+                        Aprender inglés te va a ayudar a elevar tu nivel de vida economico y profesional
                         </p>
                         <div className="flex justify-center lg:justify-start mt-8">
                             <button

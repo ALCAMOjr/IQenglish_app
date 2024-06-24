@@ -59,7 +59,7 @@ const CardNosotros = () => {
       <div className="container mx-auto">
         <div className="w-[60vw] mx-auto flex justify-center flex-col items-center -mt-16 mb-12">
           <h1 className="text-2xl font-bold tracking-tight text-black sm:text-4xl font-popping text-center mb-4">
-            Nuestra Ubicación e Instlaciones
+            Nuestra Ubicación e Instalaciones
           </h1>
           <p className="mb-2 max-w-[600px] text-xl lg:text-2xl text-primary text-dark dark:text-dark-4  font-normal text-center" style={{ letterSpacing: '-0.01em' }}>Nuestras experiencias diseñadas para que mejores tu vocabulario, escucha y comunicación</p>
         </div>

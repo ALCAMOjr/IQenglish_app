@@ -85,7 +85,7 @@ export default function Carousel() {
   <h1 className="text-2xl font-bold tracking-tight text-primary sm:text-4xl font-popping text-center">
     Nuestro Gran Evento de Gala Azul y Oro
   </h1>
-  <p className="mb-2 max-w-[600px] text-xl lg:text-2xl text-base text-dark dark:text-dark-4  font-normal text-center mt-4 mb-8" style={{ letterSpacing: '-0.01em' }}>Al terminar la preparación. Reconocemos tu esfuerzo y dedicación en un evento de gala llamado Azul y Oro</p>
+  <p className="mb-2 max-w-[600px] text-xl lg:text-2xl text-base text-dark dark:text-dark-4  font-normal text-center mt-4 mb-8" style={{ letterSpacing: '-0.01em' }}>Al terminar tu preparación. Reconocemos tu esfuerzo y dedicación en un evento de gala llamado Azul y Oro</p>
 </div>
 
 

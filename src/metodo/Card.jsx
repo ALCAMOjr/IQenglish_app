@@ -13,7 +13,7 @@ const Card = () => {
   const issues = [
     { id: 1, image: image1, name: "Aprende inglés a distancia", description: "Utilizamos las herramientas tecnológicas posibles para segurar tu aprendizaje a la distancia." },
     { id: 2, image: image2, name: "Grupos pequeños", description: "Manejamos un máximo de 6 alumnos por grupo en el instituto y 4 alumnos por sala en línea." },
-    { id: 3, image: visual, name: "Sistema audiovisual", description: "Aprenderás inglés de la misma forma que aprendiste español: observando, escuchando y repitiendo." },
+    { id: 3, image: visual, name: "Sistema audiovisual", description: "Aprenderás inglés de la misma forma que aprendiste español: observando, razonando y practicando." },
   ];
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const transitions = useTransition(isVisible ? issues : [], {
         </h1>
         <p className="mb-2 max-w-[600px] text-lg lg:text-2xl text-base text-dark dark:text-dark-4  font-normal text-center" style={{ letterSpacing: '-0.01em' }}> Por qué estudiar en IQ English</p>
         <p className="text-lg leading-relaxed text-body-color dark:text-dark-6 font-popping text-center mt-4">
-        Somos una escuela de inglés con más de 36 años de experiencia en la enseñanza del idioma inglés
+        Somos una empresa que esta a la vanguardia en la enseñanza profesional del idioma inglés, contamos con mas de 30 años de experiencia y tenemos presencia a nivel nacional
 </p>
 
       </div>

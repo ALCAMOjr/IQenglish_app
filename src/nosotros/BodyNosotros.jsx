@@ -36,7 +36,7 @@ const BodyNosotros = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth < 1570);
+            setIsSmallScreen(window.innerWidth < 1477);
         };
 
         const handleScroll = () => {
@@ -427,7 +427,7 @@ const BodyNosotros = () => {
                <img
                    src={foto1}
                    alt=""
-                   className="max-w-full w-[350px] sm:w-[250px] rounded-3xl transform transition duration-500 ease-in-out hover:scale-105"
+                   className="max-w-full w-[350px] sm:w-[250px]  rounded-3xl transform transition duration-500 ease-in-out hover:scale-105"
                />
            </div>
            <div className="py-3 sm:py-4">
@@ -447,10 +447,10 @@ const BodyNosotros = () => {
        </div>
    </animated.div>
    <div className="text-center max-w-xl -mt-24">
-       <h2 className="mb-2 text-2xl font-bold tracking-tight text-rose-600 sm:text-3xl font-popping text-[#b5d3f8]">
+       <h2 className="mb-2 text-3xl font-bold tracking-tight text-rose-600 sm:text-3xl font-popping text-[#b5d3f8]">
            Somos una reconocida escuela de inglés con más de 36 años de experiencia
        </h2>
-       <p className="mb-24 text-md lg:text-sm dark:text-dark-6 font-popping text-[#F0F4F9]" style={{ letterSpacing: '-0.01em' }}>
+       <p className="mb-12 text-md lg:text-sm dark:text-dark-6 font-popping text-[#F0F4F9]" style={{ letterSpacing: '-0.01em' }}>
            Comprometidos con brindar una educación de calidad y adaptada a las necesidades de nuestros estudiantes
        </p>
        <ul className="flex flex-col items-center">
@@ -469,7 +469,7 @@ const BodyNosotros = () => {
             ) : (
                 <div className="content-container py-8 mx-auto relative mb-4">
                     <div className="flex flex-col-reverse lg:flex-row items-center ml-0 lg:ml-[250px]">
-                        <div className="max-w-xl -mt-8">
+                        <div className="max-w-xl lg:-mt-8 md:mt-32">
                             <h2 className="text-4xl font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-[#b5d3f8] -mt-8">
                                 Somos una reconocida escuela de inglés con más de 36 años de experiencia
                             </h2>
@@ -489,7 +489,7 @@ const BodyNosotros = () => {
                         </div>
                         <div className="w-[400px] lg:w-1/3 flex items-center flex-grow ml-0 order-1 lg:order-2 lg:ml-48 -mt-8">
                         <div className="w-full lg:w-2/3 flex justify-center mb-8 lg:mb-0 order-2 lg:order-1 image-container">
-                            <div className="w-full px-3 sm:px-4 xl:w-[300px]">
+                            <div className="w-full px-3 sm:px-4 xl:w-[400px]">
                                 <animated.div style={imageAnimation}>
                                     <div className="py-3 sm:py-4">
                                         <img
@@ -509,7 +509,7 @@ const BodyNosotros = () => {
                                     </div>
                                 </animated.div>
                             </div>
-                            <div className="w-full px-3 sm:px-4 xl:w-[280px]">
+                            <div className="w-full px-3 sm:px-4 xl:w-[480px]">
                                 <animated.div style={imageAnimation}>
                                     <div className="relative z-10 my-4">
                                         <img

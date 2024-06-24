@@ -30,14 +30,14 @@ function NavbarApp() {
           <div className="relative flex items-center justify-between w-full">
             <div className="flex items-center">
               <NavbarBrand>
-                <img src={logo} alt="Logo" className='w-[250px] h-auto' />
+                <img src={logo} alt="Logo" className='w-[250px] lg:w-[300px] md:w-[300px] h-auto lg:h-[300px]' />
               </NavbarBrand>
             </div>
             <div className="flex items-center ml-auto">
               <Dropdown>
                 <DropdownTrigger>
                   <Button variant="solid" size="md" color="secondprimary">
-                    <img src={hamburguer} alt="Menu" className='w-12 h-12' />
+                    <img src={hamburguer} alt="Menu" className='w-12 h-12 lg:w-14 lg:h-14' />
                   </Button>
                 </DropdownTrigger>
                 <DropdownMenu aria-label="Navigation">

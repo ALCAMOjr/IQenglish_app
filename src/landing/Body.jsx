@@ -58,7 +58,7 @@ const Body = () => {
         <div className="content-container py-8 mx-auto flex flex-col items-center">
           <animated.div style={imageAnimation} className="w-full flex justify-center mb-2 -mt-2 image-container">
             <div style={{ backgroundImage: `url(${fondo_image})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
-              <img src={blogsSmall} alt="hero" className="max-w-full w-[250px] transform transition duration-500 ease-in-out hover:scale-105" />
+              <img src={blogsSmall} alt="hero" className="max-w-full lg:w-[400px] sm:w-[300px] md:w-[350px] w-[250px] transform transition duration-500 ease-in-out hover:scale-105" />
             </div>
           </animated.div>
           <div className="text-center max-w-xl -mt-24">

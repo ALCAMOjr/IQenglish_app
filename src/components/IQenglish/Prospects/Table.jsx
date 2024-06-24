@@ -89,11 +89,11 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
                                             <ul>
                                                 <li className="flex items-center">
                                                     <GrUpdate className="inline-block ml-8" />
-                                                    <a onClick={() => openModalUpdate(prospect)} href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Actualizar Prospecto</a>
+                                                    <a onClick={() => openModalUpdate(prospect)}  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Actualizar Prospecto</a>
                                                 </li>
                                                 <li className="flex items-center">
                                                     <IoTrash className="inline-block ml-8" />
-                                                    <a onClick={() => openModalDelete(prospect)} href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Eliminar Prospecto</a>
+                                                    <a onClick={() => openModalDelete(prospect)}  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Eliminar Prospecto</a>
                                                 </li>
                                             </ul>
                                         </div>

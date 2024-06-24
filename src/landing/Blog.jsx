@@ -154,12 +154,12 @@ const Blog = () => {
           </ModalContent>
         </Modal>
 
-        <div id="register" className="-mx-4 flex flex-wrap lg:justify-between ">
+        <div className="-mx-4 flex flex-wrap lg:justify-between ">
 
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12 -mt-16">
             <div className="mb-24 max-w-[570px] lg:mb-0 mt-4">
 
-              <span className="mb-4 block text-base font-semibold text-[black] font-popping">
+              <span className="mb-4 text-lg block text-base font-semibold text-[black] font-popping">
                 ¿Deseas aprender inglés?
               </span>
               <h2 className="mb-4 text-4xl font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-[#b5d3f8]">Aprender inglés nunca fue tan fácil</h2>
@@ -267,7 +267,7 @@ const Blog = () => {
               </div>
 
 
-              <div className="clients pt-16 flex items-center">
+              <div  className="clients pt-16 flex items-center">
                 <h6 className="mb-2 max-w-[600px] text-sm lg:text-lg dark:text-dark-6 font-signature text-dark" style={{ letterSpacing: '-0.01em', lineHeight: '1.4' }}>
                   Aprende inglés ahora
                   <span className="ml-3 inline-block h-px w-8 bg-white"></span>
@@ -281,7 +281,7 @@ const Blog = () => {
           </div>
 
 
-          <div className="w-full px-4 lg:w-full xl:w-5/12">
+          <div id="register" className="w-full px-4 lg:w-full xl:w-5/12">
             <div
               className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12"
             >
@@ -439,7 +439,7 @@ const Blog = () => {
                   <div className="flex items-center h-5">
                     <input id="terms" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                   </div>
-                  <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">De acuerdo con los <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</a></label>
+                  <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">De acuerdo con los <a  className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</a></label>
                 </div>
                 <div className="flex items-start mb-5">
                   <div className="flex items-center h-5">

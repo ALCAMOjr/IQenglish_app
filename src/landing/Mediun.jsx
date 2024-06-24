@@ -72,10 +72,10 @@ const Mediun = () => {
             <img src={horario} alt="Icono 2" className="w-8 h-8 mr-2" /> Horarios Personalizados
           </p>
           <p className={`flex items-center text-2xl font-bold tracking-tight text-rose-600 sm:text-2xl font-popping transform transition duration-500 ease-in-out hover:scale-105 ${isSmallScreen ? 'text-sm' : ''}`}>
-            <img src={atencion} alt="Icono 3" className="w-8 h-8 mr-2" /> Atencion Online
+            <img src={atencion} alt="Icono 3" className="w-8 h-8 mr-2" />Atención Online
           </p>
           <p className={`flex items-center text-2xl font-bold tracking-tight text-rose-600 sm:text-2xl font-popping transform transition duration-500 ease-in-out hover:scale-105 ${isSmallScreen ? 'text-sm' : ''}`}>
-            <img src={certificacion} alt="Icono 4" className="w-8 h-8 mr-2" /> Certificacion Toefl
+            <img src={certificacion} alt="Icono 4" className="w-8 h-8 mr-2" /> certificación Toefl
           </p>
           <p className={`flex items-center text-2xl font-bold tracking-tight text-rose-600 sm:text-2xl font-popping transform transition duration-500 ease-in-out hover:scale-105 ${isSmallScreen ? 'text-sm' : ''}`}>
             <img src={poliza} alt="Icono 5" className="w-8 h-8 mr-2" /> Aprendizaje asegurado

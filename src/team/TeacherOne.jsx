@@ -1,5 +1,5 @@
 import { Card, CardBody } from "@nextui-org/react";
-import teacherone from "../assets/teacherone.jpeg";
+import teacherone from "../assets/foto.jpeg";
 
 const TeacherOne = () => {
     return (
@@ -47,7 +47,7 @@ const TeacherOne = () => {
                 </div>
 
                 <div className="w-full lg:w-1/2 flex justify-center items-center ml-4 lg:justify-end mb-8 lg:mb-0 order-1 lg:order-2">
-    <img src={teacherone} alt="teacher" className="w-[400px] l-[300px]  h-auto transform transition duration-500 ease-in-out hover:scale-105 rounded-lg" />
+    <img src={teacherone} alt="teacher" className=" mt-16 w-[300px] h-[200px] sm:w-[400px] lg:h-[300px]  lg:w-[450px] lg:h-[450px] h-auto transform transition duration-500 ease-in-out hover:scale-105 rounded-lg" />
 </div>
 
             </div>

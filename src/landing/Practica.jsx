@@ -29,7 +29,7 @@ const Practica = () => {
         id: 3, 
         image: canto, 
         title: "Soundbooth", 
-        description: "Sumérgete en el emocionante mundo del audio con nuestro taller Soundbooth. Aprende a crear y producir contenido cautivador, desde podcasts inspiradores hasta música original." 
+        description: "Perfecciona tus habilidades de comprension auditiva con nuestro taller de Soundbooth. Aprende a crear y producir contenido cautivador, desde podcasts inspiradores hasta música original." 
     },
     { 
         id: 4, 
@@ -89,11 +89,11 @@ const Practica = () => {
           {transitions((props, item) => (
             <animated.div key={item.id} style={props} className="flex flex-col">
               <div className="max-w-sm mx-6 my-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 -mt-4 transform transition duration-500 ease-in-out hover:scale-105">
-                <a href="#">
+                <a >
                   <img className="rounded-t-lg" src={item.image} alt={item.title} style={{ height: "200px", width: "400px" }} />
                 </a>
                 <div className="p-5">
-                  <a href="#">
+                  <a >
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">{item.title}</h5>
                   </a>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{item.description}</p>

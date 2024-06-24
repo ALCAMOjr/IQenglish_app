@@ -417,7 +417,7 @@ const closeModal = () => {
         <animated.img
           src={foto}
           alt="hero"
-          className="h-auto w-[90%] md:w-[70%] lg:w-[500px] rounded-lg ml-0 lg:ml-64 "
+          className="mt-16 lg:ml-48 w-[300px] h-[200px] sm:w-[400px] lg:h-[300px]  lg:w-[450px] lg:h-[450px] h-auto transform transition duration-500 ease-in-out hover:scale-105 rounded-lg"
           style={{ ...card2Animation, ...hoverAnimation }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -433,13 +433,13 @@ const closeModal = () => {
           </p>
           <div className="flex flex-col mt-12 space-y-4">
             <p className="flex ml-6 items-center text-2xl font-bold tracking-tight text-rose-600 sm:text-2xl font-popping transform transition duration-500 ease-in-out hover:scale-105">
-              <img src={clases} alt="Icono 1" className="w-8 h-8 mr-2" /> Clases presenciales
+              <img src={clases} alt="Icono 1" className="w-8 h-8 mr-4" /> Clases presenciales
             </p>
             <p className="flex ml-6 items-center text-2xl font-bold tracking-tight text-rose-600 sm:text-2xl font-popping transform transition duration-500 ease-in-out hover:scale-105">
-              <img src={workshops} alt="Icono 2" className="w-8 h-8 mr-2" /> Actividades especiales
+              <img src={workshops} alt="Icono 2" className="w-8 h-8 mr-4" /> Actividades especiales
             </p>
             <p className="flex ml-6 items-center text-2xl font-bold tracking-tight text-rose-600 sm:text-2xl font-popping transform transition duration-500 ease-in-out hover:scale-105">
-              <img src={atencion} alt="Icono 3" className="w-8 h-8 mr-2" /> Clases Online
+              <img src={atencion} alt="Icono 3" className="w-8 h-8 mr-4" /> Clases Online
             </p>
           </div>
           <div className="mt-12 flex justify-center lg:justify-start">

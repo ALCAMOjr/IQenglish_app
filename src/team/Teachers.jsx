@@ -1,21 +1,22 @@
-
-import teachertwo from "../assets/teachertwo.jpeg"
-import teacherthree from "../assets/teacherthree.jpeg"
-import teacherfour from "../assets/teacherfour.jpg"
+import teachertwo from "../assets/teachertwo.jpeg";
+import teacherthree from "../assets/teacherthree.jpeg";
+import teacherfour from "../assets/teacherfour.jpg";
 import "../css/Tailwind.css";
 import { useSpring, animated } from '@react-spring/web';
 import { useState } from 'react';
-import teacherone from "../assets/teacherone.jpeg";
+import teacherfive from "../assets/teacherfive.jpeg";
+
 const Teachers = () => {
     const [flipped, setFlipped] = useState({});
     const [tooltips, setTooltips] = useState({});
 
     const teachers = [
-        { id: 1, image: teacherone, name: "Coriss Ambady", role: " Maestría en Educación", description: " Jessica es una Teacher genial. No solo sabe mucho sobre educación, ¡sino que también le encanta pintar con acuarelas en su tiempo libre! Está lista para cualquier desafío que se le presente en su vida profesional." },
-        { id: 2, image: teachertwo, name: "Diego", role: "Dibujar y leer", description: "Decidió enseñar inglés para que más personas mejoren sus habilidades de comunicación, Se ha preparado muy duro para ser un instructor de calidad obteniendo certificaciones reconocidas como  Cambridge C1 y TOEFL." },
-        { id: 3, image: teacherthree, name: "Rocio", role: "Licen", description: "Después de trabajar en negocios internacionales por un año, decidí trasladarme a Costa Rica, donde empecé mi carrera como maestra de inglés en el 2011. " },
-        { id: 3, image: teacherfour, name: "Rocio", role: "Licen", description: "Después de trabajar en negocios internacionales por un año, decidí trasladarme a Costa Rica, donde empecé mi carrera como maestra de inglés en el 2011. " },  ];
-
+        { id: 1, image: teachertwo, name: "Jessica", role: "Maestría en Educación", description: "Tengo una Maestría en Ciencias de la Educación y disfruto pintar con acuarela. Enseñar inglés es un nuevo reto profesional y estoy emocionada de compartir mis conocimientos y crecer con mis estudiantes." },
+        { id: 2, image: teacherfour, name: "Diego", role: "Dibujar y leer", description: "Aprendí inglés en el colegio y tengo certificados de Cambridge C1 y TOEFL lo que respalda mi competencia en el idioma.. Disfruto del dibujo y la lectura. Enseño inglés para ayudar a otros a mejorar sus habilidades de comunicación." },
+        { id: 3, image: teacherthree, name: "Rocio", role: "Coordinadora", description: "Aprendí inglés en la escuela y disfruto del cine, la lectura y la cocina. Enseñar inglés me permite compartir mis conocimientos y aprender de mis estudiantes, ayudándolos a abrir nuevas puertas." },
+        { id: 4, image: teacherfive, name: "Bonnie", role: "Profesora", description: "Nací en Nueva Zelanda y tengo una Maestría en Periodismo de Investigación. Disfruto componer música, esquiar, patinar, nadar y más. Enseño inglés y obtuve mi licencia en Massey University." }
+    ];
+    
     const handleFlip = (id) => {
         setFlipped((prev) => ({ ...prev, [id]: !prev[id] }));
     };
@@ -33,11 +34,11 @@ const Teachers = () => {
                             <span className="mb-2 block text-lg font-semibold text-primary">
                                 Nuestro Equipo
                             </span>
-                            <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                            <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black dark:text-black sm:text-4xl md:text-[40px]">
                                 ¡Conoce a tus instructores!
                             </h2>
                             <p className="text-base text-body-color dark:text-dark-6">
-                                Instructores certificados y expertos en educación que van a ayudarte que tu proceso sea más fácil.
+                                Instructores certificados y expertos en educación que ayudan a que tu proceso sea más fácil.
                             </p>
                         </div>
                     </div>
@@ -55,17 +56,17 @@ const Teachers = () => {
 
                         return (
                             <div key={teacher.id} className="w-full px-4 md:w-1/2 xl:w-1/4">
-                                <div className="mx-auto mb-10 w-full max-w-[370px] perspective-1000 transform transition duration-500 ease-in-out hover:scale-105" style={{ position: 'relative', height: '370px' }}>
+                                <div className="mx-auto mb-10 w-full max-w-[370px] perspective-1000 transform transition duration-500 ease-in-out hover:scale-105 h-[370px]">
                                     <animated.div
                                         className="relative w-full h-full"
                                         style={{ transform, position: 'absolute', top: 0, left: 0 }}
                                     >
                                         <animated.div style={{ opacity: opacity.to(o => 1 - o), transform }} className="absolute w-full h-full backface-hidden" >
-                                            <div className="relative overflow-hidden rounded-lg h-full ">
+                                            <div className="relative overflow-hidden rounded-lg h-full">
                                                 <img src={teacher.image} alt={teacher.name} className="w-full h-full object-cover" />
                                                 <div className="absolute bottom-5 left-0 w-full text-center">
                                                     <div className="relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5 dark:bg-dark-2">
-                                                        <h3 className="text-base font-semibold text-dark dark:text-white">
+                                                        <h3 className="text-base font-semibold text-black dark:text-black">
                                                             {teacher.name}
                                                         </h3>
                                                         <p className="text-xs text-body-color dark:text-dark-6">

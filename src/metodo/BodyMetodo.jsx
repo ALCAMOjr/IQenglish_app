@@ -394,7 +394,7 @@ const BodyMetodo = () => {
                   <div className="flex items-center h-5">
                     <input id="terms" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                   </div>
-                  <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">De acuerdo con los <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</a></label>
+                  <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">De acuerdo con los <a className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</a></label>
                 </div>
                 <div className="flex items-start mb-5">
                   <div className="flex items-center h-5">
@@ -428,60 +428,57 @@ const BodyMetodo = () => {
       </div>
 
       {isSmallScreen ? (
-        <div className="content-container py-8 mx-auto flex flex-col ">
-          <div className="max-w-xl">
-            <h2 className="text-2xl font-bold tracking-tight text-rose-600 sm:text-3xl font-popping text-[#b5d3f8] xs-4  ml-8 sm:ml-16 md:ml-64 lg:ml-82 mb-4">
+        <div className="content-container py-8 mx-auto relative">
+        <div className="flex flex-col lg:flex-row items-center ml-0 lg:ml-[250px]">
+          <div className="max-w-xl mt-8 lg:mt-0">
+            <h2 className="text-4xl xs:ml-4 sm:ml-4 ml-4 font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-[#b5d3f8] mb-2">
             Habla inglés en 8 meses con nuestro metodo divertido y enfocado a la práctica 
             </h2>
-            <p className="mb-4 text-lg lg:text-xl dark:text-dark-6 font-popping text-[#F0F4F9]  ml-8 sm:ml-16 md:ml-64 lg:ml-82" style={{ letterSpacing: '-0.01em' }}>
+            <p className="mb-6 max-w-[600px] xs:ml-4 sm:ml-4 ml-4 text-md lg:text-2xl dark:text-dark-6 font-popping text-[#F0F4F9]" style={{ letterSpacing: '-0.01em' }}>
             IQ English es tu mejor opción para aprender inglés de manera efectiva.
             </p>
-            <div className="flex flex-col justify-center items-center mx-auto max-w-[800px]">
-              {/* Parejas de elementos */}
-              <div className="w-full md:w-1/2 mb-4 px-4 ml-8 sm:ml-16 md:ml-64 lg:ml-82">
-                <p className="text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                  <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
-                  Método innovador
-                  
-                </p>
-              </div>
-              <div className="w-full md:w-1/2 mb-4 px-4 ml-8 sm:ml-16 md:ml-64 lg:ml-82">
-                <p className="text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                  <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
-                  Aprendizaje personalizado
-                </p>
-              </div>
-              <div className="w-full md:w-1/2 mb-4 px-4 ml-8 sm:ml-16 md:ml-64 lg:ml-82">
-                <p className="text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                  <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
-                  Horarios flexibles
+            <p className="mb-2 ml-4 max-w-[600px] lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+              <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
+              Aprendizaje personalizado
              
-                </p>
-              </div>
-              <div className="w-full md:w-1/2 mb-4 px-4 ml-8 sm:ml-16 md:ml-64 lg:ml-82">
-                <p className="text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                  <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
-                  Clubes de practica
-                </p>
-              </div>
-            </div>
-            <ul className="flex justify-center">
+            </p>
+            <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9] lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+              <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
+              Método innovador
+                  
+         
+            </p>
+            <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9] lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+              <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
+              Horarios flexibles
+        
+            </p>
+            <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9] lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+              <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
+              Clubes de practica
+           
+            </p>
+            <ul className="flex flex-wrap items-center">
               <li>
                 <button
-                  className="transform transition duration-500 ease-in-out hover:scale-105 inline-flex items-center mt-4 mr-32 sm:mr-64 md:-mr-32 justify-center rounded-md bg-white px-6 py-3 text-center text-xl lg:text-2xl font-medium text-gray-900  focus:outline-none border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:"
+                  className="transform transition duration-500 ease-in-out hover:scale-105 inline-flex items-center mt-4 ml-4 justify-center rounded-md bg-white px-6 py-3 text-center text-xl lg:text-2xl font-medium text-gray-900 focus:outline-none border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 lg:px-7"
                   onClick={openModal}
                 >
-                 Empieza Ahora
+                  Saber más
                 </button>
               </li>
             </ul>
           </div>
-          <animated.div style={imageAnimation} className="w-full flex justify-center mt-4 image-container">
-            <div style={{ backgroundImage: `url(${fondo_image})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
-              <img src={blogsSmall} alt="hero" className="max-w-full w-[325px] transform transition duration-500 ease-in-out hover:scale-105 rounded-3xl" />
-            </div>
-          </animated.div>
+          <div className="w-full lg:w-2/3 flex justify-center mb-8 lg:mb-0 order-1 lg:order-2 image-container">
+            <animated.div style={imageAnimation}>
+              <div style={{ backgroundImage: `url(${fondo_image})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+                <img src={blogs} alt="hero" className="max-w-full w-[300px] sm:w-[450px] xs:w-[400px] mt-16 transform transition duration-500 ease-in-out hover:scale-105 rounded-lg" />
+              </div>
+            </animated.div>
+          </div>
         </div>
+      </div>
+      
 
       ) : (
         <div className="content-container py-8 mx-auto relative">
@@ -493,20 +490,20 @@ const BodyMetodo = () => {
               <p className="mb-6 max-w-[600px] text-md lg:text-2xl dark:text-dark-6 font-popping text-[#F0F4F9]" style={{ letterSpacing: '-0.01em' }}>
               IQ English es tu mejor opción para aprender inglés de manera efectiva.
               </p>
-              <p className="mb-2  ml-4 max-w-[600px] lg:text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
+              <p className="mb-2  ml-4 max-w-[600px] lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+                <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
                 Método innovador
               </p>
-              <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9] lg:text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
+              <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9] lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+                <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
                 Aprendizaje personalizado
               </p>
-              <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9]lg:text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
+              <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9]lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+                <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
                 Horarios flexibles
               </p>
-              <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9] lg:text-lg dark:text-dark-6 font-popping text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
-                <span className="inline-block bg-black rounded-full h-2 w-2 mr-2"></span>
+              <p className="mb-6 mt-4 ml-4 max-w-[600px] text-[#F0F4F9] lg:text-lg dark:text-dark-6 font-popping text-white transform transition duration-500 ease-in-out hover:scale-105" style={{ letterSpacing: '-0.01em' }}>
+                <span className="inline-block bg-white rounded-full h-2 w-2 mr-2"></span>
                 Clubes de practica
               </p>
               <ul className="flex flex-wrap items-center">
