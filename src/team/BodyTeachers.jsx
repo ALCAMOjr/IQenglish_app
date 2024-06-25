@@ -427,9 +427,9 @@ const BodyTeachers = () => {
 
       {isSmallScreen ? (
       <div className="content-container py-8 mx-auto relative">
-      <div className="flex flex-col lg:flex-row items-center ml-0 lg:ml-[250px]">
+      <div className="flex flex-col lg:flex-row items-center ml-0 lg:ml-32">
         <div className="max-w-xl mt-8 lg:mt-0">
-          <h2 className="text-4xl xs:ml-4 sm:ml-4 ml-4 md:ml-12 font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-[#b5d3f8] mb-2">
+          <h2 className="text-4xl xs:ml-4 sm:ml-4 ml-4 md:ml-8 font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-[#b5d3f8] mb-2">
             Habla inglés fluido y aprende con los mejores instructores
           </h2>
           <p className="mb-6 max-w-[600px] xs:ml-4 sm:ml-4 ml-4 text-md lg:text-2xl dark:text-dark-6 font-popping text-[#F0F4F9]" style={{ letterSpacing: '-0.01em' }}>
@@ -469,7 +469,7 @@ const BodyTeachers = () => {
         <div className="w-full lg:w-2/3 flex justify-center mb-8 lg:mb-0 order-1 lg:order-2 image-container">
           <animated.div style={imageAnimation}>
             <div style={{ backgroundImage: `url(${fondo_image})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
-              <img src={blogs} alt="hero" className="max-w-full sm:w-[450px] xs:w-[400px] mt-16 transform transition duration-500 ease-in-out hover:scale-105" />
+              <img src={blogs} alt="hero" className="sm:w-[450px] xs:w-[450px] mt-16 transform transition duration-500 ease-in-out hover:scale-105" />
             </div>
           </animated.div>
         </div>

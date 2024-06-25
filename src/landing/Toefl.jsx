@@ -41,7 +41,7 @@ const Toefl = () => {
         <animated.img 
           src={card2} 
           alt="hero" 
-          className="mr-20 h-[100px] w-[300px] sm:h-[125px] sm:w-[400px] md:h-[150px] md:w-[450px] lg:h-[160px] lg:w-[550px] xl:h-[200px] xl:w-[600px] rounded-lg lg:ml-48 mt-6" 
+          className="lg:mr-20 h-[100px] w-[300px] sm:h-[125px] sm:w-[400px] md:h-[150px] md:w-[450px] lg:h-[160px] lg:w-[550px] xl:h-[200px] xl:w-[600px] rounded-lg lg:ml-48 mt-6" 
           style={{...card2Animation, ...hoverAnimation}}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}

@@ -55,7 +55,7 @@ const Teachers = () => {
                         });
 
                         return (
-                            <div key={teacher.id} className="w-full px-4 md:w-1/2 xl:w-1/4">
+                            <div key={teacher.id} className="w-full px-4 lg:w-1/4 md:w-1/2 xl:w-1/4">
                                 <div className="mx-auto mb-10 w-full max-w-[370px] perspective-1000 transform transition duration-500 ease-in-out hover:scale-105 h-[370px]">
                                     <animated.div
                                         className="relative w-full h-full"

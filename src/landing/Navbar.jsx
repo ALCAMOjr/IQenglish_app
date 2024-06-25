@@ -6,7 +6,7 @@ import { Navbar, NavbarBrand, Dropdown, DropdownTrigger, DropdownMenu, Button, D
 
 function NavbarApp() {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1570);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1300);
   const location = useLocation();
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function NavbarApp() {
       ) : (
         <Navbar className='bg-primary mt-8 mb-24'>
           <NavbarBrand className='relative'>
-            <img src={logo} alt="Logo" className='-ml-48 mt-24 w-64 h-64' />
+            <img src={logo} alt="Logo" className='xl:-ml-64 mt-24 xl:w-[500px] xl:h-[400px] lg:w-[350px] lg:h-[350px] md:-ml-24' />
           </NavbarBrand>
           <div className="flex justify-start items-center pl-16 sm:flex lg:pl-0">
             <div>

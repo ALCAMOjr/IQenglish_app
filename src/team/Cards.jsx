@@ -445,7 +445,7 @@ const transitions = useTransition(isVisible ? cards : [], {
 
         <div id="practica" className="-mx-4 flex flex-wrap justify-center">
           {transitions((props, item) => (
-            <animated.div key={item.id} style={props} className="flex flex-col m-4"> {/* Añade márgenes para aumentar el espacio entre las tarjetas */}
+            <animated.div key={item.id} style={props} className="flex flex-col gap-4 m-4"> {/* Añade márgenes para aumentar el espacio entre las tarjetas */}
               <div className="max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition duration-500 ease-in-out hover:scale-105"> {/* Reduce el ancho máximo para hacer las tarjetas más pequeñas */}
                 <div className="p-4">
                   <a href="#">

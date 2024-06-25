@@ -4,8 +4,8 @@ import { Card, CardBody } from "@nextui-org/react";
 const Nivelacion = () => {
   return (
     <div className="bg-primary">
-      <div className="content-container py-8 mx-auto h-auto lg:h-[500px] ml-8">
-        <div className="flex flex-col lg:flex-row items-center lg:ml-[230px] mt-24 ">
+      <div className="content-container py-8 mx-auto h-auto lg:h-[500px] ml-16">
+        <div className="flex flex-col lg:flex-row items-center lg:ml-[130px] xl:ml-[230px] mt-24">
           <div className="max-w-xl">
             <h2 className="text-4xl font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-black -mt-10">
               Acepta el reto
