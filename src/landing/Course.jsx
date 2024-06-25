@@ -39,7 +39,7 @@ const Course = () => {
         <animated.img 
           src={card2} 
           alt="hero" 
-          className="h-[200px] w-[300px] sm:h-[300px] sm:w-[400px] md:h-[350px] md:w-[450px] lg:h-[400px] lg:w-[600px] xl:h-[400px] xl:w-[600px] rounded-lg lg:ml-48 mt-6" 
+          className="h-[200px] w-[300px] sm:h-[300px] sm:w-[400px] md:h-[350px] md:w-[550px] lg:h-[400px] lg:w-[550px] xl:h-[400px] xl:w-[600px] rounded-lg lg:ml-32 xl:ml-48 mt-6" 
           style={{...card2Animation, ...hoverAnimation}}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}

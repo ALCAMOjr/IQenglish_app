@@ -11,7 +11,7 @@ function NavbarApp() {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 1570);
+      setIsSmallScreen(window.innerWidth < 1300);
     };
 
     window.addEventListener('resize', checkScreenSize);

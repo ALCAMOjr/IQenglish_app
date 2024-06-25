@@ -15,7 +15,7 @@ const Mediun = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1500);
+      setIsSmallScreen(window.innerWidth < 1300);
     };
 
     const handleScroll = () => {

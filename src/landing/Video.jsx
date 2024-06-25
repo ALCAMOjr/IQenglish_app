@@ -3,7 +3,7 @@ import React from 'react';
 const Video = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center mb-32 mt-32 gap-8 px-4">
-      <video className="h-[20rem] md:h-[25rem] lg:h-[30rem] max-w-full border border-gray-200 rounded-lg dark:border-gray-700" autoPlay muted controls>
+      <video className="h-[20rem] md:h-[25rem] lg:h-[30rem] max-w-full lg:w-[600px] xl:w-[800px] border border-gray-200 rounded-lg dark:border-gray-700" autoPlay muted controls>
         <source src="https://gateway.pinata.cloud/ipfs/QmXkpjYf6hfx4jKKoiWnGTVhP1ZgDEpy4XEGUTK5hEaX7X" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

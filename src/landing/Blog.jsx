@@ -267,7 +267,7 @@ const Blog = () => {
               </div>
 
 
-              <div  className="clients pt-16 flex items-center">
+              <div  className="clients mt-0 pt-16 flex items-center">
                 <h6 className="mb-2 max-w-[600px] text-sm lg:text-lg dark:text-dark-6 font-signature text-dark" style={{ letterSpacing: '-0.01em', lineHeight: '1.4' }}>
                   Aprende inglés ahora
                   <span className="ml-3 inline-block h-px w-8 bg-white"></span>
@@ -281,7 +281,7 @@ const Blog = () => {
           </div>
 
 
-          <div id="register" className="w-full px-4 lg:w-full xl:w-5/12">
+          <div id="register" className="w-full px-4 lg:w-[600px] xl:w-5/12">
             <div
               className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12"
             >
