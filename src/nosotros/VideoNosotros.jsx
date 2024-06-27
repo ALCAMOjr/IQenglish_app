@@ -382,8 +382,8 @@ const VideoNosotros = () => {
 </div>
 
       <div className="flex flex-col lg:flex-row justify-center items-center mb-32 mt-32 gap-8 px-4">
-      <video className="h-[20rem] md:h-[25rem] lg:h-[30rem] max-w-full border border-gray-200 rounded-lg dark:border-gray-700" autoPlay muted controls>
-        <source src="https://gateway.pinata.cloud/ipfs/QmVLsyt5rZYqHrs5xPNqtiiaKoUtj6HWipKgXEwy4BXrU4" type="video/mp4" />
+      <video className="h-[20rem] md:h-[25rem] lg:h-[30rem] max-w-full lg:w-[600px] xl:w-[800px] border border-gray-200 rounded-lg dark:border-gray-700" autoPlay muted controls>
+      <source src="https://gateway.pinata.cloud/ipfs/QmVLsyt5rZYqHrs5xPNqtiiaKoUtj6HWipKgXEwy4BXrU4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="flex flex-col items-center lg:items-start lg:ml-8 mt-8 lg:mt-0">
