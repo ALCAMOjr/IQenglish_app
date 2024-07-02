@@ -421,7 +421,7 @@ const BodyNosotros = () => {
         <div className={`area ${isSmallScreen ? 'small-screen' : ''}`}>
             {isSmallScreen ? (
    <div className="content-container py-8 mx-auto flex flex-col items-center">
-   <animated.div style={imageAnimation} className="w-full flex justify-center mb-32 mt-16 image-container">
+   <animated.div style={imageAnimation} className="w-full flex justify-center mb-32 mt-16 lg:-mt-4 lg:mb-24 image-container">
        <div className="w-full px-3 sm:px-4 xl:w-[300px] flex justify-center">
            <div className="py-3 sm:py-4">
                <img

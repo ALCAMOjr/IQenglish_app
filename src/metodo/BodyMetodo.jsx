@@ -429,10 +429,10 @@ const BodyMetodo = () => {
 
       {isSmallScreen ? (
         <div className="content-container py-8 mx-auto relative">
-        <div className="flex flex-col lg:flex-row items-center ml-0 lg:ml-[250px]">
+        <div className="flex flex-col lg:flex-row items-center  ml-0 lg:ml-32">
           <div className="max-w-xl mt-8 lg:mt-0">
             <h2 className="text-4xl xs:ml-4 sm:ml-4 ml-4 font-bold tracking-tight text-rose-600 sm:text-5xl font-popping text-[#b5d3f8] mb-2">
-            Habla inglés en 8 meses con nuestro metodo divertido y enfocado a la práctica 
+            Habla inglés en 8 meses y cumple tu meta de hablar inglés
             </h2>
             <p className="mb-6 max-w-[600px] xs:ml-4 sm:ml-4 ml-4 text-md lg:text-2xl dark:text-dark-6 font-popping text-[#F0F4F9]" style={{ letterSpacing: '-0.01em' }}>
             IQ English es tu mejor opción para aprender inglés de manera efectiva.

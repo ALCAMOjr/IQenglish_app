@@ -1,6 +1,6 @@
-import foto1 from "../assets/foto1.jpg";
-import foto2 from "../assets/foto2.jpg";
-import foto3 from "../assets/foto3.jpg";
+import foto1 from "../assets/foto3.jpeg";
+import foto2 from "../assets/foto1.jpeg";
+import foto3 from "../assets/foto2.jpeg";
 import { useTransition, animated, config } from 'react-spring';
 
 import React, { useState, useEffect } from 'react';
