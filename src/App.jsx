@@ -1,4 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
+// App.jsx
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import NavbarApp from "./landing/Navbar";
 import Body from "./landing/Body";
 import Login from "./components/IQenglish/login.jsx";
@@ -18,12 +20,12 @@ import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "@material-tailwind/react";
 import Carousel from "./landing/Carousel.jsx";
 import ContactoFly from "./landing/ContactoFly.jsx";
-import Course from "./landing/Course.jsx"
-import Practica from "./landing/Practica.jsx"
+import Course from "./landing/Course.jsx";
+import Practica from "./landing/Practica.jsx";
 import Teachers from "./team/Teachers.jsx";
 import BodyTeachers from './team/BodyTeachers.jsx';
-import Cards from "./team/Cards.jsx"
-import ContactoFlyEdit from "./landing/ContactoFlyEdit.jsx"
+import Cards from "./team/Cards.jsx";
+import ContactoFlyEdit from "./landing/ContactoFlyEdit.jsx";
 import TeacherOne from './team/TeacherOne.jsx';
 import TeacherSecond from './team/TeacherSecond.jsx';
 import BodyNosotros from './nosotros/BodyNosotros.jsx';
@@ -36,13 +38,26 @@ import End from './team/End.jsx';
 import NuevaYork from './landing/NuevaYork.jsx';
 import Aprende from './metodo/Aprende.jsx';
 import Libros from './metodo/Libros.jsx';
-import Banner from "./landing/Banner.jsx"
+import Banner from "./landing/Banner.jsx";
 import Video from './landing/Video.jsx';
 import VideoMetodo from './metodo/videoMetodo.jsx';
 import Toefl from './landing/Toefl.jsx';
 
+import { updateTitle } from './views/utils.js'; // Importar la función
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const searchTerm = searchParams.get('search');
+    if (searchTerm) {
+      updateTitle(searchTerm);
+    } else {
+      document.title = 'IQEnglish Monterrey';
+    }
+  }, [location]);
+
   return (
     <NextUIProvider>
       <ThemeProvider>
@@ -61,7 +76,6 @@ function App() {
                   <Mediun />
                   <Blog />
                   <Course />
-
                   <Practica />
                   <Nivelacion />
                   <Carousel />
@@ -113,9 +127,7 @@ function App() {
                 </>
               } />
             </Routes>
-  
           </UserContextProvider>
- 
         </ProviderModalIQ>
       </ThemeProvider>
     </NextUIProvider>
