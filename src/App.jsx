@@ -42,7 +42,6 @@ import Banner from "./landing/Banner.jsx";
 import Video from './landing/Video.jsx';
 import VideoMetodo from './metodo/videoMetodo.jsx';
 import Toefl from './landing/Toefl.jsx';
-import DynamicTitle from './landing/Dinamic_tittle.jsx';
 import { updateTitle } from './views/utils.js'; // Importar la función
 
 function App() {
