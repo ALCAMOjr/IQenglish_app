@@ -60,7 +60,6 @@ function App() {
 
   return (
     <NextUIProvider>
-       <DynamicTitle defaultTitle="IQEnglish Monterrey" />
       <ThemeProvider>
         <ProviderModalIQ>
           <UserContextProvider>
