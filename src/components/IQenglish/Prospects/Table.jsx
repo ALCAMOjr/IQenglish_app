@@ -8,6 +8,8 @@ import { MdCall } from "react-icons/md";
 
 const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChange, handleMenuToggle, isOpen, openMenuIndex, openModalUpdate, openModalDelete, menuDirection, setOpenMenuIndex, setIsOpen }) => {
 
+    console.log(currentProspects);
+
     useEffect(() => {
         const handleDocumentClick = (event) => {
             if (openMenuIndex !== null && !event.target.closest("#menu-button") && !event.target.closest(".menu-options")) {
@@ -16,7 +18,6 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
         };
 
         document.addEventListener("click", handleDocumentClick);
-
 
         return () => {
             document.removeEventListener("click", handleDocumentClick);
@@ -28,9 +29,15 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
         setIsOpen([]);
     };
 
+    const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('es-ES'); // Esto formateará la fecha como "dd/MM/yyyy"
+    };
+
     return (
+        <div class="overflow-x-auto">
         <div className="flex-grow relative" style={{ paddingLeft: '250px', marginTop: '10px', marginBottom: '20rem' }}>
-            <div className="">
+    
                 <Table hoverable className="relative min-w-max" style={{ minWidth: '400px', marginLeft: 'auto' }}>
                     <TableHead>
                         <TableHeadCell className="p-4">
@@ -42,6 +49,7 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
                         <TableHeadCell>Número de Teléfono</TableHeadCell>
                         <TableHeadCell>Dirección</TableHeadCell>
                         <TableHeadCell>Edad</TableHeadCell>
+                        <TableHeadCell>Dia de registro</TableHeadCell>
                         <TableHeadCell>
                             <span className="sr-only">Acciones</span>
                         </TableHeadCell>
@@ -52,7 +60,7 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
                                 <TableCell className="p-4">
                                     <Checkbox color="blue" />
                                 </TableCell>
-                                <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                                <TableCell className="whitespace-nowrap font-medium text-sm text-gray-900 dark:text-white">
                                     {prospect.name}
                                 </TableCell>
                                 <TableCell>{prospect.lastname}</TableCell>
@@ -70,6 +78,7 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
                                 </TableCell>
                                 <TableCell>{prospect.addresses ? prospect.addresses : "No disponible"}</TableCell>
                                 <TableCell>{prospect.age}</TableCell>
+                                <TableCell>{formatDate(prospect.date)}</TableCell>
                                 <TableCell>
                                     <button id="menu-button" onClick={() => handleMenuToggle(index)} className={`relative group p-2 ${isOpen[index] ? 'open' : ''}`}>
                                         <div className={`relative flex overflow-hidden items-center justify-center rounded-full w-[32px] h-[32px] transform transition-all bg-white ring-0 ring-gray-300 hover:ring-8  ${isOpen[index] ? 'ring-4' : ''} ring-opacity-30 duration-200 shadow-md`}>
@@ -89,11 +98,11 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
                                             <ul>
                                                 <li className="flex items-center">
                                                     <GrUpdate className="inline-block ml-8" />
-                                                    <a onClick={() => openModalUpdate(prospect)}  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Actualizar Prospecto</a>
+                                                    <a onClick={() => openModalUpdate(prospect)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Actualizar Prospecto</a>
                                                 </li>
                                                 <li className="flex items-center">
                                                     <IoTrash className="inline-block ml-8" />
-                                                    <a onClick={() => openModalDelete(prospect)}  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Eliminar Prospecto</a>
+                                                    <a onClick={() => openModalDelete(prospect)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Eliminar Prospecto</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -108,6 +117,7 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
                 <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
             </div>
         </div>
+  
     );
 };
 

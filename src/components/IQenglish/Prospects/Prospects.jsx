@@ -314,6 +314,7 @@ const Prospects = () => {
         });
         setisModalOpenUpdate(true);
         openModalUpdateContext();
+        setOpenMenuIndex(null)
     };
 
 
@@ -334,6 +335,7 @@ const Prospects = () => {
         });
         setisModalOpenDelete(true);
         openModalDeleteContext()
+        setOpenMenuIndex(null)
     };
 
 
