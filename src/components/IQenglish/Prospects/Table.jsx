@@ -112,10 +112,11 @@ const TableComponent = ({ currentProspects, currentPage, totalPages, onPageChang
                         ))}
                     </TableBody>
                 </Table>
-            </div>
-            <div className="flex overflow-x-auto sm:justify-center">
+                <div className="flex overflow-x-auto sm:justify-center">
                 <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
             </div>
+            </div>
+          
         </div>
   
     );

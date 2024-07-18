@@ -46,8 +46,10 @@ const Cards = ({ currentProspects, handleMenuToggle, isOpen, openMenuIndex, open
   }
 
   return (
+    <div>
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginBottom: '15rem', marginTop: '-1rem', overflow: 'auto' }}>
       {currentProspects.map((prospect, index) => (
+        <div>
         <Card key={index} className="sm:max-w-xs bg-white text-black transform transition duration-500 ease-in-out hover:scale-105" style={{ width: '100%', maxWidth: '18rem', marginBottom: '5cm', margin: '1rem' }}>
           <div className="mb-4 flex items-center justify-between">
             {/* Botón con icono RxHamburgerMenu */}
@@ -113,8 +115,19 @@ const Cards = ({ currentProspects, handleMenuToggle, isOpen, openMenuIndex, open
               </li>
             </ul>
           </div>
+          
         </Card>
+       
+    </div>
+     
       ))}
+        <div style={{ zIndex: 999 }}>
+     <div className="flex overflow-x-auto justify-center">
+            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
+        </div>
+        </div>
+    
+      </div>
       {showModal && (
         <div id="timeline-modal" tabIndex="-1" aria-hidden="true" className="fixed inset-0 z-50 overflow-y-auto bg-gray-800 bg-opacity-50 flex justify-center items-center">
           <div className="relative p-4 w-full max-w-md">
@@ -155,15 +168,15 @@ const Cards = ({ currentProspects, handleMenuToggle, isOpen, openMenuIndex, open
                 <p> Edad: {selectedProspect.age} </p>
               </div>
             </div>
+            
           </div>
+          
         </div>
+        
       )}
-     <div style={{ zIndex: 999 }}>
-     <div className="flex overflow-x-auto sm:justify-center">
-            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
-        </div>
+
     </div>
-    </div>
+  
     
   );
 };
