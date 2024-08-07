@@ -10,7 +10,7 @@ const Banner = () => {
         <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400 banner-text">
           <img src={cohete} alt="Rocket icon" className="w-6 h-6 mr-3" />
           <span className="animated-text">
-            <span>Aprovecha el</span> <span className="sale">40% OFF </span> de JULIO y aprende inglés hoy
+            <span>Aprovecha el</span> <span className="sale">40% OFF </span> de AGOSTO y aprende inglés hoy
           </span>
           <Button  onClick={() => document.getElementById('register').scrollIntoView({ behavior: 'smooth' })} color="primary" size="sm" variant='shadow' className="ml-4 flex flex-col -gap-2">
   <p className="mb-0">Empieza</p>

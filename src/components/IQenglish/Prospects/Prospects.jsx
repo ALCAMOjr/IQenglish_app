@@ -271,6 +271,7 @@ const Prospects = () => {
         if (reversedProspects) {
             setTotalPages(Math.ceil(reversedProspects.length / itemsPerPage));
             setCurrentProspects(reversedProspects.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage));
+   
         } else {
             setTotalPages(2);
             setCurrentProspects([]);
