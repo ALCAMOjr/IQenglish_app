@@ -4,7 +4,7 @@ import whatsapp from "../assets/whatsapp.png";
 import check from "../assets/marker.png";
 
 function Contacto() {
-    const telefono = "+5218180144572"; // Número de teléfono
+    const telefono = "+5218134677200"; // Número de teléfono
     const ubicacionURL = "https://www.google.com/maps/place/IQ+English+Monterrey+Sur/@25.6664105,-100.2794679,17z/data=!3m1!4b1!4m6!3m5!1s0x8662bf8567e963bd:0x84ca661e31896d55!8m2!3d25.6664057!4d-100.276893!16s%2Fg%2F11q4bl0x8y?hl=es&entry=ttu";
 
     // Función para redirigir al usuario a la ubicación en Google Maps

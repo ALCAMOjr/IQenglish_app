@@ -5,7 +5,7 @@ import icon from "../assets/logo2.jpeg";
 import { useEffect, useState } from 'react';
 
 function ContactoFlyEdit() {
-    const telefono = "+5218180144572";
+    const telefono = "+5218134677200";
     const [mostrarBotones, setMostrarBotones] = useState(false);
     const [mostrarContactos, setMostrarContactos] = useState(false);
 
