@@ -12,9 +12,9 @@ const Teachers = () => {
 
     const teachers = [
         { id: 1, image: teachertwo, name: "Jessica", role: "Maestría en Educación", description: "Tengo una Maestría en Ciencias de la Educación y disfruto pintar con acuarela. Enseñar inglés es un nuevo reto profesional y estoy emocionada de compartir mis conocimientos y crecer con mis estudiantes." },
-        { id: 2, image: teacherfour, name: "Diego", role: "Dibujar y leer", description: "Aprendí inglés en el colegio y tengo certificados de Cambridge C1 y TOEFL lo que respalda mi competencia en el idioma.. Disfruto del dibujo y la lectura. Enseño inglés para ayudar a otros a mejorar sus habilidades de comunicación." },
+        { id: 2, image: teacherfour, name: "Diego", role: "Certificación Cambridge y TOEFL", description: "Aprendí inglés en el colegio y tengo certificados de Cambridge C1 y TOEFL lo que respalda mi competencia en el idioma.. Disfruto del dibujo y la lectura. Enseño inglés para ayudar a otros a mejorar sus habilidades de comunicación." },
         { id: 3, image: teacherthree, name: "Rocio", role: "Coordinadora", description: "Aprendí inglés en la escuela y disfruto del cine, la lectura y la cocina. Enseñar inglés me permite compartir mis conocimientos y aprender de mis estudiantes, ayudándolos a abrir nuevas puertas." },
-        { id: 4, image: teacherfive, name: "Raul", role: "Teacher", description: "Nací en Nueva Zelanda y tengo una Maestría en Periodismo de Investigación. Disfruto componer música, esquiar, patinar, nadar y más. Enseño inglés y obtuve mi licencia en Massey University." }
+        { id: 4, image: teacherfive, name: "Raul", role: "Certificación TOEFL ITP", description: "Hola, soy Raúl Acevedo. Estudié la secundaria en Texas, Estados Unidos, donde aprendí inglés. Me apasionan el fútbol y los videojuegos. Tengo un gran deseo de ayudar a otros a mejorar sus habilidades en inglés y alcanzar sus metas. Estoy emocionado de ser parte de su viaje de aprendizaje." }
     ];
     
     const handleFlip = (id) => {

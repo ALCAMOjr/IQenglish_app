@@ -43,6 +43,7 @@ import Video from './landing/Video.jsx';
 import VideoMetodo from './metodo/videoMetodo.jsx';
 import Toefl from './landing/Toefl.jsx';
 import { updateTitle } from './views/utils.js'; // Importar la función
+import Condiciones from './landing/Condiciones.jsx';
 
 function App() {
   const location = useLocation();
@@ -123,6 +124,13 @@ function App() {
                   <CardNosotros />
                   <VideoNosotros />
                   <Footer />
+                </>
+              } />
+                 <Route path="/condiciones" element={
+                <>
+                  <NavbarApp />
+                 <Condiciones />
+                 <Footer />
                 </>
               } />
             </Routes>

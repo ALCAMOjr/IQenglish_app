@@ -4,6 +4,7 @@ import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 import cohete from "../assets/cohete.png"
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Link } from 'react-router-dom';
 
 
 const locations = [
@@ -267,7 +268,7 @@ const Blog = () => {
               </div>
 
 
-              <div  className="clients mt-0 pt-16 flex items-center">
+              <div className="clients mt-0 pt-16 flex items-center">
                 <h6 className="mb-2 max-w-[600px] text-sm lg:text-lg dark:text-dark-6 font-signature text-dark" style={{ letterSpacing: '-0.01em', lineHeight: '1.4' }}>
                   Aprende inglés ahora
                   <span className="ml-3 inline-block h-px w-8 bg-white"></span>
@@ -439,7 +440,9 @@ const Blog = () => {
                   <div className="flex items-center h-5">
                     <input id="terms" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                   </div>
-                  <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">De acuerdo con los <a  className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</a></label>
+                  <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-montserrat">
+                    De acuerdo con los <Link to="/condiciones" className="text-blue-600 hover:underline dark:text-blue-500">términos y condiciones</Link>
+                  </label>
                 </div>
                 <div className="flex items-start mb-5">
                   <div className="flex items-center h-5">
@@ -688,7 +691,7 @@ const Blog = () => {
             </div>
 
           </div>
-    
+
         </div>
 
       </div>

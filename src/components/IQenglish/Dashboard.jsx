@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { CgLogOut } from "react-icons/cg";
 import { GrUserAdmin } from "react-icons/gr";
 import { LiaSellsy } from "react-icons/lia";
-import FooterPage from './Footer.jsx';
+
 import Context from '../../context/advisor.context.jsx';
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from 'react-router-dom';
@@ -104,7 +104,7 @@ function Dashboard() {
                                 onClick={handlerSidebar}
                                 aria-controls="logo-sidebar"
                                 type="button"
-                                className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             >
                                 <span className="sr-only">Open sidebar</span>
                                 <FaBars className="w-6 h-6" />
@@ -205,9 +205,7 @@ function Dashboard() {
                 </div>
             </div>
 
-            <footer className="absolute bottom-0 w-full">
-                 <FooterPage />
-            </footer>
+        
         </div>
     );
 }
