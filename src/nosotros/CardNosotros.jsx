@@ -1,13 +1,9 @@
-<<<<<<< HEAD:client/src/team/Cards.jsx
 import { useState, useEffect } from 'react';
-=======
 import foto1 from "../assets/foto3.jpeg";
 import foto2 from "../assets/foto1.jpeg";
 import foto3 from "../assets/foto2.jpeg";
->>>>>>> 5c50ded8d44d5c5aad952aaaa0e6bf5bef85cdc1:src/nosotros/CardNosotros.jsx
 import { useTransition, animated, config } from 'react-spring';
 
-import React, { useState, useEffect } from 'react';
 
 const CardNosotros = () => {
   const [isVisible, setIsVisible] = useState(false);
