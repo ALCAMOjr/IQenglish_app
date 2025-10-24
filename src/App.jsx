@@ -1,5 +1,5 @@
 // App.jsx
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import NavbarApp from "./landing/Navbar";
 import Body from "./landing/Body";
@@ -35,7 +35,6 @@ import VideoNosotros from './nosotros/VideoNosotros.jsx';
 import BodyMetodo from './metodo/BodyMetodo.jsx';
 import Metodo from './metodo/Metodo.jsx';
 import End from './team/End.jsx';
-import NuevaYork from './landing/NuevaYork.jsx';
 import Aprende from './metodo/Aprende.jsx';
 import Libros from './metodo/Libros.jsx';
 import Banner from "./landing/Banner.jsx";
@@ -79,7 +78,6 @@ function App() {
                   <Practica />
                   <Nivelacion />
                   <Carousel />
-                  <NuevaYork />
                   <Video />
                   <Toefl />
                   <Reviews />
